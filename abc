@@ -1,0 +1,37 @@
+package org.generateChecksum;
+
+import lombok.*;
+
+import java.util.ArrayList;
+import java.util.Map;
+
+@Data 
+public class Employee {
+
+    private String name;
+    private Long employeeId;
+    private Double salary;
+    private Boolean isActive;
+    private ArrayList<String> projects;
+    private Map<String, Boolean> softwareAccess;
+    private ArrayList<ArrayList<Map<String, String>>> multiDataStorage;
+    private Gender gender;
+    private Employee subEmployee;
+
+     public Employee(String name, Long employeeId, Double salary, Boolean isActive,
+                    ArrayList<String> projects, Map<String, Boolean> softwareAccess,
+                    ArrayList<ArrayList<Map<String, String>>> multiDataStorage,
+                    Gender gender, Employee subEmployee) {
+        this.name = name;
+        this.employeeId = employeeId;
+        this.salary = salary;
+        this.isActive = isActive;
+        this.projects = projects;
+        this.softwareAccess = softwareAccess;
+        this.multiDataStorage = multiDataStorage;
+        this.gender = gender;
+        this.subEmployee = subEmployee;
+    }
+}
+
+
